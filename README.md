@@ -1,5 +1,6 @@
 # Budget app
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
+
 The budget app is a web app that provide to the client an easy and a quick way to track his monthly **incomes** and **expenses**  
 
 ![Preview](https://media.giphy.com/media/fxZ7abRtiLXJ8MEdvj/giphy.gif)
