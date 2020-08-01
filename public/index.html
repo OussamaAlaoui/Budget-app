@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+   
+<head> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Modak&family=Varela+Round&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/budget_s.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Sora:wght@500&display=swap" rel="stylesheet">
+   
+</head>
+<style>
+ #row1{
+    background-image: url(https://i.pinimg.com/originals/a0/fb/e2/a0fbe2738bfc70d14b3d837773573839.jpg);
+
+    
+ }
+ .form-controller 
+ {
+     width: 50px;
+ }
+
+</style>
+
+<body>
+ 
+
+
+    <div class="container my-container">
+        <div  id="row1"class="row my-row" align="center">
+        <div class="col my-col">
+    
+         <h1 id='h-date'>Availble Budget in </h1>
+         
+    <div class="results  justify-content-center">
+       
+        <div class="box ">
+            
+        <div id='total' value="0.00">+ 0.00</div><br>
+        
+        <div class='INCOME '> 
+            <div class='INCOME-t' >INCOME</div>
+            <span id='INCOME_SCORE' >+ 0.00</span>
+
+
+        </div>
+        <div class='EXPENSES'>
+
+            <div class='EXPENSES-t'>EXPENSES</div>
+            <div id='EXPENSES_SCORE'>- 0.00</div>
+
+        </div>
+
+
+   
+        <div class="form-inline">
+    <div class="data">
+   
+        <div class="form-group">
+            <div class="i-checks"> 
+                <select id="add_type" class="form-control" name="type"  >
+                    <option value="+" selected>+</option>
+                    <option value="-">-</option>
+                   
+                </select>
+            </div>
+
+
+        <div class="form-group">
+  
+        <input class="form-control"type="text" placeholder="Description" id="description" autocomplete="off" name='description'>
+        </div>
+        <div class="form-group">
+        <input  class="form-control" id="amount" type="number" name='amount' placeholder="Amount">  
+     </div> 
+           
+           <div class="form-group">
+        <button id="added" class="btn btn-primary">OK</button>
+    </div>
+        </div>
+          
+     
+
+    </div>
+</div> 
+</div>
+
+</div>
+ 
+</div>
+</div>
+<div class="row my-row ">
+    <div class="col-6 my-col">
+  
+        <div class="INCOME_INFO"> 
+            
+            <div class="income_title">INCOME</div>
+            <div id="info-row-in" class="row w-90">
+                <div class="col-3 my-col"> 
+                <div class="date-in">
+                    Date
+                </div></div>
+            <div class="col-6 my-col"> <div class="dis-in">
+                Description
+            </div></div>
+            <div class="col-3 my-col">  <div>
+                Amount
+            </div></div>
+            </div> 
+            <div id="income_data">
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-6 my-col">
+  
+        <div class="EXPENSES_INFO"> 
+            
+            <div class="expences_title">EXPENSES</div>
+            <div id="info-row-ex" class="row w-90">
+                <div class="col-3 my-col"> 
+                    <div class="date-ex">
+                    Date
+                </div>
+            </div>
+            <div class="col-6 my-col"> 
+                <div class="dis">
+                Description
+            </div>
+</div>
+            <div class="col-3 my-col">  <div>
+                Amount
+            </div></div>
+            </div> 
+            <div id="expences_data">
+               
+            </div>
+        </div>
+    </div>
+    
+       
+</div>
+<script src="budget.js"></script>
+</body>
+</html>
+
