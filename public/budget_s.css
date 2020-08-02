@@ -163,14 +163,54 @@ body
     
     border: 2px solid teal;
     width: 90%;
-
+    overflow-x: hidden;
     margin: auto;
     background-color: white;
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
 
 }
+.income-header,.income-data
+{
+    padding: 6px 0 6px 0;
+    display: grid;
+    grid-template-columns: 22% auto 30%;
 
+    border-bottom: 2px solid teal;
+    
+   
+}
+
+
+.income-header div ,.exp-cont div,.income-data div
+{
+   padding-left:20px;
+   
+}
+.expenses-header,.expenses-data
+{
+    padding: 6px 0 6px 0;
+    display: grid;
+    grid-template-columns: 22% auto 30%;
+  
+    border-bottom: 2px solid tomato;
+    
+   
+}
+
+
+.expenses-header div ,.expenses-data div
+{
+   padding-left:20px;
+   
+}
+
+
+
+#des-ex
+{
+    width: 50px;
+}
 .EXPENSES_INFO {
   
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
@@ -218,7 +258,8 @@ body
 #income_data
 {
     height: 20vh;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 #info-row-in
 {

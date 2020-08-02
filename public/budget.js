@@ -25,7 +25,7 @@ getinfo();
             if(type=='-')
              {     total_exp+=parseFloat(amount);
                     total-=parseInt(amount);  
-                    exp+=`<div id="info-row-ex" class="row w-90">`+`<div class="col-3 my-col">`+date.day+'-'+date.month+'-'+date.year+`</div>`+`<div class="col-6 my-col">`+description+`</div>`+`<div class="col-3 my-col">`+amount+`</div>`+`</div>`;
+                    exp+=`<div class="expenses-data">`+`<div class="">`+date.day+'-'+date.month+'-'+date.year+`</div>`+`<div >`+description+`</div>`+`<div >`+amount+`</div>`+`</div>`;
                     document.getElementById("expences_data").innerHTML=exp;
                     document.getElementById('EXPENSES_SCORE').innerHTML="- "+total_exp.toFixed(2);;
             }
@@ -33,7 +33,7 @@ getinfo();
             {      
                 total_inc+=parseFloat(amount);
                 total+=parseInt(amount); 
-                inc+=`<div id="info-row-in" class="row w-90">`+`<div class="col-3 my-col">`+date.day+'-'+date.month+'-'+date.year+`</div>`+`<div class="col-6 my-col">`+description+`</div>`+`<div class="col-3 my-col">`+amount+`</div>`+`</div>`;
+                inc+=`<div class="income-data">`+`<div class="">`+date.day+'-'+date.month+'-'+date.year+`</div>`+`<div >`+description.split('').join('&#8203;')+`</div>`+`<div >`+amount+`</div>`+`</div>`;
                 document.getElementById("income_data").innerHTML=inc;
                 document.getElementById('INCOME_SCORE').innerHTML="+ "+total_inc.toFixed(2);;
             }
@@ -52,6 +52,7 @@ getinfo();
     {
        
       const button = document.getElementById("added");
+      console.log(button);
       button.addEventListener('click', async event => {   
       const type=document.getElementById('add_type').value;
       const amount=document.getElementById('amount').value;
@@ -74,4 +75,33 @@ getinfo();
       });
     
     }
+     //----------------DELETE-----------------------
+     deltinfo();
+     function deltinfo()
+   {
+      
+     const button_D = document.getElementById("delt");
+     console.log(button_D);
+    //  button.addEventListener('click', async event => {   
+    //  const type=document.getElementById('add_type').value;
+    //  const amount=document.getElementById('amount').value;
+    //  const description = document.getElementById('description').value;
+    //  const date={year:today.getFullYear(),month:(today.getMonth()+1),day:today.getDate()};
+    //  const data={date,type,amount,description}; 
+    //    const options = {
+    //      method: 'POST',
+    //      headers: {
+    //        'Content-Type': 'application/json'
+    //      },
+    //      body: JSON.stringify(data),  
+    //    };
+    //  document.getElementById('amount').value="";
+    //  document.getElementById('description').value="";
+    //  location.reload();
+    //  const response =  await fetch('/app',options);
+    //  const json = await response.json();
+     
+    //  });
+   
+   }
 
