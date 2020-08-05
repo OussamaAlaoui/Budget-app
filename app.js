@@ -16,6 +16,19 @@ app.get('/app',(req,res)=>
 });
 
 app.post('/app',(req,res)=>{
+    
       const data=req.body;
+  
     database.insert(data);
+});
+
+app.post('/delete',(req,res)=>{
+    
+   
+    console.log(req.body.id);
+//     const data=req.body;
+   database.remove({"_id":req.body.id}, {multi: true}, function (err, result) {
+    console.log('item delted');
+
+    });
 });

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-   
-<head> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <head> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Modak&family=Varela+Round&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="/budget_s.css">
     <link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Sora:wght@500&display=swap" rel="stylesheet">
@@ -22,8 +22,7 @@
 
 <body>
  
-
-
+   
     <div class="container my-container">
         <div  id="row1"class="row my-row" align="center">
         <div class="col my-col">
@@ -88,59 +87,56 @@
 </div>
 </div>
 <div class="row my-row ">
-    <div class="col-6 my-col">
+   
+    <div class="col my-col">
+
+      
+        <table id="INCOME_INFO">
+            <thead class="income-header">
+                <tr>
+                    <th class="income_title" colspan="4">INCOME</th>
+                  </tr>
+            <tr id="head">
+                
+                <th class="date-in">Date</th>
+                <th class="des-in">  Description</th> 
+                <th class="in-am">Amount</th>
+                <th></th>
+              </tr>
+            </thead>
+
+            <tbody id="data-in" >
+                
+            </tbody>
+        
+        </table>
+
+     </div>
+
+
+     <div class="col-6 my-col">
   
-        <div class="INCOME_INFO"> 
-            
-            <div class="income_title">INCOME</div>
-            <div class="income-header">
-                <div class="date-in">
-                    Date
-                </div>
-           <div class="dis-in">
-                Description
-            </div>
-        <div class="am-in">
-                Amount
-            </div>
-          </div>
-            <div id="income_data">
+        
+        <table id="EXPENSES_INFO">
+        <thead class="expenses-header" >
+            <tr>
+                <th class="expenses_title" colspan="4">EXPENSES</th>
+              </tr>
+            <tr class="header-ex">
+                
+                <th class="date-ex">Date</th>
+                <th class="des-ex">  Description</th> 
+                <th class="ex-am">Amount</th>
+                <th></th>
+              </tr>
+         </thead>
+        <tbody id="data-ex">
 
-
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="col-6 my-col">
-  
-        <div class="EXPENSES_INFO"> 
-            
-            <div class="expences_title">EXPENSES</div>
-          
-                <div class="expenses-header"> 
-                    <div class="date-ex">
-                    Date
-                </div>
-            
-            
-                <div class="dis">
-                Description
-            </div>
-
-         <div id="ex-am">
-                Amount
-            </div>
-          </div>
-
-            <div id="expences_data">
-               
-            </div>
-        </div>
-    </div>
+        </tbody>
+        </table>
+    </div> 
     
-       
+    
 </div>
 <script src="budget.js"></script>
 </body>
