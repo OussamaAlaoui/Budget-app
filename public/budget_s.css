@@ -18,7 +18,6 @@ body
 }
 .box 
 {
-    position: relative;
     padding: 10px;
     background: rgba(255,255,255,.2);
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
@@ -45,7 +44,6 @@ body
     margin: 5px;
 }
 #h-date {
-    position: relative;
     background-color: rgb(177, 207, 170);
         margin: auto;
          font-family: Futura,Trebuchet MS,Arial,sans-serif;  
@@ -235,7 +233,7 @@ tbody td
     border: none;
     border-radius: 5px;
     background-color: red;
-   margin-right: 5px;
+    margin-left: 0;
 }
 #delete:hover
 {
@@ -248,17 +246,32 @@ i{
 }
 #desc_data
 {
-    width: 49%;
+    width: 55%;
     padding:0 5px 0 5px;
 
 }
 
 #delt_data
 {
-    width:20%;
+    width:10%;
 }
+#edit_data
+{
+    width:10%;
+}
+#edit
+{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #0070F9;
+   margin-right: 5px;
+ 
+}
+
 #amo_data
-{width: 20%;
+{
+    width: 20%;
 }
 .expenses-header th
 {
@@ -288,7 +301,8 @@ i{
     font-family: Futura,Trebuchet MS,Arial,sans-serif; 
     background-color: white;
     border: 2px solid tomato;
-    width: 90%;
+   
+
 
     margin: auto;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
@@ -318,7 +332,7 @@ i{
     border-right: 2px solid teal;
 }
 #date-in-data{
-    width: 24%;
+    width: 26%;
   
 }
 .date-ex{
@@ -327,11 +341,12 @@ i{
 }
 .des-ex
 {
-    width: 55%;
+    width: 50%;
     border-left:  2px solid tomato;
 }
 .ex-am
 {
+    width: 25%;
     border-left:  2px solid tomato;
 }
 #expences_data
@@ -368,4 +383,65 @@ tbody {
     height: 170px;       /* Just for the demo          */
     overflow-y: auto;    /* Trigger vertical scroll    */
     overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+.bg-modal
+{
+      position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        top:0;
+    display: none;
+
+}
+ .modal-content
+{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 2%;
+    
+} 
+.edit_info 
+{
+    width: 50%;
+    margin: auto;
+    
+   
+}
+#description-edit
+{
+    margin-top: 10px;
+
+}
+#conf_ed
+{
+    margin-top: 10px;
+}
+#amount-edit
+{
+    margin-top: 10px;
+}
+
+.edit_info select
+{
+    width: 25%;
+    margin: auto; 
+}
+.edit_info button
+{
+    margin: auto;
+}
+.close 
+{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 40px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }

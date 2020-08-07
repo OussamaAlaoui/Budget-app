@@ -9,6 +9,7 @@ database.loadDatabase();
 const today=new Date();
 app.get('/app',(req,res)=>
 {
+
     database.find({ "date.month": today.getMonth()+1,"date.year":today.getFullYear() }, function(err, doc) {
         res.json(doc);
         });
@@ -22,13 +23,39 @@ app.post('/app',(req,res)=>{
     database.insert(data);
 });
 
+app.get('/elem/:id',(req,res)=>{
+    
+    var id=req.params.id;
+     database.findOne({ "_id": id}, function(err, doc) {
+         if(err)
+         throw err;
+         res.json(doc);
+        });
+});
 app.post('/delete',(req,res)=>{
     
    
-    console.log(req.body.id);
+   
 //     const data=req.body;
-   database.remove({"_id":req.body.id}, {multi: true}, function (err, result) {
-    console.log('item delted');
+   database.remove({"_id":req.body.id}, function (err, result) {
+       if (err)
+       throw err;
+
+    console.log('item delted!');
 
     });
 });
+app.post('/edit/:id',(req,res)=>{
+    
+ //   console.log(req.body.description);
+  const id =req.params.id;
+database.update(
+    { _id: id }, 
+    { $set: { type: req.body.type, description: req.body.description,amount: req.body.amount}},
+    {},// this argument was missing
+    function (err, numReplaced) {
+      console.log("replaced---->" + numReplaced);
+    }
+    );
+});
+

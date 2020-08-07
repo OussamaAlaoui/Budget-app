@@ -23,7 +23,7 @@
 <body>
  
    
-    <div class="container my-container">
+<div class="container my-container">
         <div  id="row1"class="row my-row" align="center">
         <div class="col my-col">
     
@@ -33,7 +33,7 @@
        
         <div class="box ">
             
-        <div id='total' value="0.00">+ 0.00</div><br>
+        <div id='total' value="0.00"></div><br>
         
         <div class='INCOME '> 
             <div class='INCOME-t' >INCOME</div>
@@ -94,13 +94,14 @@
         <table id="INCOME_INFO">
             <thead class="income-header">
                 <tr>
-                    <th class="income_title" colspan="4">INCOME</th>
+                    <th class="income_title" colspan="5">INCOME</th>
                   </tr>
             <tr id="head">
                 
                 <th class="date-in">Date</th>
                 <th class="des-in">  Description</th> 
                 <th class="in-am">Amount</th>
+                <th></th>
                 <th></th>
               </tr>
             </thead>
@@ -120,13 +121,14 @@
         <table id="EXPENSES_INFO">
         <thead class="expenses-header" >
             <tr>
-                <th class="expenses_title" colspan="4">EXPENSES</th>
+                <th class="expenses_title" colspan="5">EXPENSES</th>
               </tr>
             <tr class="header-ex">
                 
                 <th class="date-ex">Date</th>
                 <th class="des-ex">  Description</th> 
                 <th class="ex-am">Amount</th>
+                <th></th>
                 <th></th>
               </tr>
          </thead>
@@ -137,6 +139,28 @@
     </div> 
     
     
+</div>
+
+</div>
+<div class="bg-modal">
+   
+    <div class="modal-content"> 
+        <div class="edit_info">
+            <div class="close">+</div>
+        <h3>Edit your data:</h3>
+       
+           
+        <select id="type-edit" class="form-control" name="type">
+            <option value="+">+</option>
+            <option value="-">-</option>
+          
+          </select>
+         
+        <input class="form-control"type="text" placeholder="Description" id="description-edit" autocomplete="off" name='description'>
+        <input  class="form-control" id="amount-edit" type="number" name='amount' placeholder="Amount">  
+        <button id="conf_ed" class="btn btn-primary">Submit</button>
+        </div>
+    </div>
 </div>
 <script src="budget.js"></script>
 </body>
