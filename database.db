@@ -1,3 +1,25 @@
 {"type":true,"_id":"5Irr2VfpgiHCOhxD"}
 {"type":"-","_id":"mm2TLrkkYy7dmnkz"}
 {"type":"+","_id":"y7RUijFzs8S0z08H"}
+{"date":{"year":2020,"month":8,"day":12},"type":"+","amount":"3000","description":"school web site","_id":"X8JFLZoIhsKcWT10"}
+{"date":{"year":2020,"month":8,"day":12},"type":"+","amount":"250","description":"GYM membership","_id":"Ffvqy4T7tc4pDJ7l"}
+{"$$deleted":true,"_id":"Ffvqy4T7tc4pDJ7l"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"250","description":"G​Y​M​ ​m​e​m​b​e​r​s​h​i​p","_id":"pHfZtDRHCqXomUSC"}
+{"$$deleted":true,"_id":"X8JFLZoIhsKcWT10"}
+{"$$deleted":true,"_id":"pHfZtDRHCqXomUSC"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"150","description":"Books","_id":"BTSgJrkMU7bwzrqm"}
+{"date":{"year":2020,"month":8,"day":12},"type":"+","amount":"150","description":"books","_id":"AYQM8LkKdzrsqRHz"}
+{"$$deleted":true,"_id":"AYQM8LkKdzrsqRHz"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"100","description":"beyond good and evil ","_id":"BTSgJrkMU7bwzrqm"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"100","description":"beyond good and evil ","_id":"BTSgJrkMU7bwzrqm"}
+{"date":{"year":2020,"month":8,"day":12},"type":"+","amount":"250","description":"rent ","_id":"Sm424gYblGhkRdUz"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"250","description":"rent ","_id":"Sm424gYblGhkRdUz"}
+{"date":{"year":2020,"month":8,"day":12},"type":"+","amount":"500","description":"sell my old phone","_id":"xAYA5wf8aCUyN6bQ"}
+{"$$deleted":true,"_id":"xAYA5wf8aCUyN6bQ"}
+{"$$deleted":true,"_id":"BTSgJrkMU7bwzrqm"}
+{"$$deleted":true,"_id":"Sm424gYblGhkRdUz"}
+{"date":{"year":2020,"month":8,"day":12},"type":"+","amount":"150","description":"books","_id":"QyVnbRLTPEkmyOwr"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"100","description":"the institute book","_id":"QyVnbRLTPEkmyOwr"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"100","description":"the institute book","_id":"QyVnbRLTPEkmyOwr"}
+{"date":{"year":2020,"month":8,"day":12},"type":"-","amount":"100","description":"the institute book","_id":"QyVnbRLTPEkmyOwr"}
+{"$$deleted":true,"_id":"QyVnbRLTPEkmyOwr"}

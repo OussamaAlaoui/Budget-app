@@ -2,8 +2,13 @@
 [![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/DAVFoundation/captain-n3m0/blob/master/LICENSE)
 
 The budget app is a web app that provide to the client an easy and a quick way to track his monthly **incomes** and **expenses**  
-
+### Adding new data 
 ![Preview](https://media.giphy.com/media/fxZ7abRtiLXJ8MEdvj/giphy.gif)
+### Deleting data 
+![Preview](https://media.giphy.com/media/WqS46afo8FxDVuqUvK/giphy.gif)
+### Editing data 
+![Preview](https://media.giphy.com/media/ej887OSA5mao8LSU2S/giphy.gif)
+
 ## Setup
 
 1. Either fork or download the app and open the folder in your ide of choice 
@@ -39,8 +44,11 @@ The budget app is a web app that provide to the client an easy and a quick way t
 ## Featurs
 
 * You can add your expenses and incomes of the month 
+* Deleting data from database by clicking the red trash button 
+* Editing already inserted data 
 * All data of the month are listed in two separated tables, one for your _Expenses_ and the other for the _Incomes_
 * The head_bar containes month's name which is dynamic, it means it changes according to the current month 
+
 * Under the head bar you have four sections:
     * First one it displays the total of your expenses and incomes "_incomes - expenses_", so it makes it easier for you to see your gains or losses of the month 
     * Second section is for the total of your incomes of the month 
